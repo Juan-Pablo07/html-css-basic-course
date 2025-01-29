@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All about Mars!</title>
+        <style>
+            h2 {
+                color: #b24d00;  /* Naranja oscuro */
+            }
+            
+            h3 {
+                color: #925d07;  /* Marrón más suave */
+            }
+
+            /* Estilo para el cuerpo de la página */
+            body {
+                margin: 0;  /* Elimina márgenes predeterminados */
+                padding: 0;  /* Elimina el padding */
+                min-height: 100vh;  /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+                font-family: Arial, sans-serif;  /* Fuente más legible */
+                color: white;  /* Texto blanco */
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* Poner la imagen de fondo con un gradiente y filtro */
+            .background {
+                background-image: url('images/mars.jpg');  /* Ruta de la imagen */
+                background-size: cover;  /* La imagen cubre toda la pantalla */
+                background-position: center;  /* Centra la imagen */
+                background-attachment: fixed;  /* Hace que la imagen se quede fija cuando se hace scroll */
+                position: absolute;  /* Necesario para que ocupe toda la pantalla */
+                top: 0; left: 0; right: 0; bottom: 0;
+                filter: blur(3px);  /* Aplica desenfoque a la imagen */
+                z-index: -1;  /* Asegura que la imagen quede detrás del contenido */
+            }
+
+            /* Overlay semitransparente para mejorar la legibilidad del texto */
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);  /* Filtro negro semitransparente */
+                z-index: -1;  /* Asegura que el overlay esté detrás del contenido */
+            }
+
+            /* Contenedor principal para mantener el contenido bien posicionado */
+            .container {
+                position: relative;
+                z-index: 1;  /* Asegura que el texto se muestre por encima del fondo */
+                padding: 20px;
+                max-width: 1000px;
+                margin: 0 auto;
+                background-color: rgba(0, 0, 0, 0.6);  /* Fondo oscuro con algo de transparencia */
+                border-radius: 10px;  /* Bordes redondeados */
+                margin-top: 100px;  /* Espacio superior */
+                padding-bottom: 50px;  /* Espacio inferior */
+            }
+
+            /* Estilo para títulos y párrafos */
+            h1 {
+                font-size: 3rem;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+
+            /* Asegura que los enlaces sean visibles */
+            a {
+                color: #ff6600;  /* Naranja brillante */
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            /* Añadir un espaciado entre elementos de la lista */
+            ul {
+                padding: 0;
+            }
+
+            ul li {
+                list-style: none;
+                margin: 10px 0;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!-- Contenedor de fondo -->
+        <div class="background"></div>
+        <div class="overlay"></div>
+
+        <!-- Contenedor principal de contenido -->
+        <div class="container">
+            <h1>Mars</h1>
+            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury.</p>
+            <p>In English, Mars carries a name of the Roman god of war, and is often referred to as the *Red Planet* because the iron oxide prevalent on its surface gives it a reddish appearance that is distinctive among the astronomical bodies visible to the naked eye.</p>
+        
+            <h2>Orbit and rotation</h2>
+        
+            <h3>Rotation</h3>
+            <p>Mars's average distance from the Sun is roughly 230 million km (143 million mi), and its orbital period is 687 (Earth) days. The solar day (or sol) on Mars is only slightly longer than an Earth day: 24 hours, 39 minutes, and 35.244 seconds. A Martian year is equal to 1.8809 Earth years, or 1 year, 320 days, and 18.2 hours.</p>
+        
+            <p>The axial tilt of Mars is 25.19 degrees relative to its orbital plane, which is similar to the axial tilt of Earth. As a result, Mars has seasons like Earth, though on Mars they are nearly twice as long because its orbital period is that much longer. In the present day epoch, the orientation of the north pole of Mars is close to the star Deneb.</p>
+        
+            <h3>Orbit</h3>
+            <p>Mars has a relatively pronounced orbital eccentricity of about 0.09; of the seven other planets in the Solar System, only Mercury has a larger orbital eccentricity. It is known that in the past, Mars has had a much more circular orbit...</p>
+        
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Back home</a></li>
+                <li><a href="earth.html">About Earth</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All about Earth</title>
+        <style>
+             h1 {
+                color: #00b300;  /* Verde más suave */
+            }
+            h2 {
+                color: #00b300;  /* Verde más suave */
+            }
+            
+            h3 {
+                color: #4199eb;  /* Marrón más suave */
+            }
+
+            /* Estilo para el cuerpo de la página */
+            body {
+                margin: 0;  /* Elimina márgenes predeterminados */
+                padding: 0;  /* Elimina el padding */
+                min-height: 100vh;  /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+                font-family: Arial, sans-serif;  /* Fuente más legible */
+                color: white;  /* Texto blanco */
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* Poner la imagen de fondo con un gradiente y filtro */
+            .background {
+                background-image: url('images/earth.jpg');  /* Ruta de la imagen */
+                background-size: cover;  /* La imagen cubre toda la pantalla */
+                background-position: center;  /* Centra la imagen */
+                background-attachment: fixed;  /* Hace que la imagen se quede fija cuando se hace scroll */
+                position: absolute;  /* Necesario para que ocupe toda la pantalla */
+                top: 0; left: 0; right: 0; bottom: 0;
+                filter: blur(3px);  /* Aplica desenfoque a la imagen */
+                z-index: -1;  /* Asegura que la imagen quede detrás del contenido */
+            }
+
+            /* Overlay semitransparente para mejorar la legibilidad del texto */
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);  /* Filtro negro semitransparente */
+                z-index: -1;  /* Asegura que el overlay esté detrás del contenido */
+            }
+
+            /* Contenedor principal para mantener el contenido bien posicionado */
+            .container {
+                position: relative;
+                z-index: 1;  /* Asegura que el texto se muestre por encima del fondo */
+                padding: 20px;
+                max-width: 1000px;
+                margin: 0 auto;
+                background-color: rgba(0, 0, 0, 0.6);  /* Fondo oscuro con algo de transparencia */
+                border-radius: 10px;  /* Bordes redondeados */
+                margin-top: 100px;  /* Espacio superior */
+                padding-bottom: 50px;  /* Espacio inferior */
+            }
+
+            /* Estilo para títulos y párrafos */
+            h1 {
+                font-size: 3rem;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+            }
+
+            /* Asegura que los enlaces sean visibles */
+            a {
+                color: #00ff00;  /* Verde brillante */
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            /* Añadir un espaciado entre elementos de la lista */
+            ul {
+                padding: 0;
+            }
+
+            ul li {
+                list-style: none;
+                margin: 10px 0;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!-- Contenedor de fondo -->
+        <div class="background"></div>
+        <div class="overlay"></div>
+
+        <!-- Contenedor principal de contenido -->
+        <div class="container">
+            <h1>Earth</h1>
+            <p>Earth is <strong>the third planet from the Sun</strong>, and <strong>the only astronomical object known to harbor life</strong>.</p>
+        
+            <h2>Orbit and rotation</h2>
+        
+            <h3>Rotation</h3>
+            <p>Earth's rotation period relative to the Sun—its mean solar day—is 86,400 seconds of mean solar time (86,400.0025 SI seconds). Because Earth's solar day is now <em>slightly</em> longer than it was during the 19th century due to tidal deceleration, <strong>each day varies between 0 and 2 SI ms longer</strong>.</p>
+
+            <h3>Orbit</h3>
+            <p>Earth orbits the Sun at an average distance of about 150 million km (93 million mi) every 365.2564 mean solar days, or one sidereal year. This gives an apparent movement of the Sun eastward with respect to the stars at a rate of about 1°/day...</p>
+
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Back home</a></li>
+                <li><a href="mars.html">About Mars</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>
+
