@@ -1,22 +1,53 @@
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Introduction to CSS</title>
+        <style>
+            /* Color Palette */
+            :root {
+                --main-color: hsl(264, 100%, 30%);
+                --highlight-color: rgb(229, 0, 255);
+                --accent-color: rgb(202, 23, 56);
+                --link-color: #42f4df;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 70px;
+                color: var(--main-color);
+            }
+
+            h2 {
+                font-size: 50px;
+                color: var(--highlight-color);
+            }
+
+            p {
+                font-size: 18px;
+                color: var(--accent-color);
+            }
+
+            a {
+                color: var(--link-color);
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
-        <!-- 
-            #42f4df
-            #f77002
-            #13a351
-            rgb(206, 105, 72)
-            rgb(229, 0, 255)
-            hsl(264, 100%, 30%)
-         -->
-        
-        
-        <h1 style="font-size: 70px; color: hsl(264, 100%, 30%);">Cascading Style Sheets</h1>
-        <p style="font-size: 20px; color:rgb(202, 23, 56)">We use CSS to add style to our HTML documents.</p>
-        <p>There are a few different ways to add CSS to a document, but for time being we'll be using <em>inline</em> CSS.</p>
-        <h2 style="font-size: 70px; color:rgb(229, 0, 255)">Inline CSS</h2>
+        <h1>Cascading Style Sheets</h1>
+        <p>We use CSS to add style to our HTML documents.</p>
+        <p>There are a few different ways to add CSS to a document, but for the time being we'll be using <em>inline</em> CSS.</p>
+        <h2>Inline CSS</h2>
         <p>Inline CSS is written directly in our HTML using a style attribute.</p>
         <p>We can style any element using inline styles, from the body to headings and paragraphs, <a href="#">as well as links</a> and strong and em tags too!</p>
     </body>
