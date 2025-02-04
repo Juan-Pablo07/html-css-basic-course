@@ -1,0 +1,8 @@
+/* TODO: change the color of the text to white */
+
+body {
+    background: #333;
+    color: white;
+}
+
+h1 { color: red; }
