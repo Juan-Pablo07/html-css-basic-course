@@ -1,0 +1,44 @@
+body {
+    background: #333;
+    color: white;
+}
+/*  Este es el estandar según Kevin powell
+    para los margin:  
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    --------------------------- 
+    TAMBIEN SE PUEDE HACER LO MISMO ASÍ:
+    margin: 10px 20px 30px 40px;
+    Cuando le damos la opcion margin: 50px
+    TODOS LOS LADOS ADQUIEREN 50px
+    ---------------------------
+    en: margin 10px 20px; 
+    el 10 representa top and botton
+    y el 20 representa left and right;
+}*/
+
+header {
+    color: #333;
+    background: white;
+    width: 300px;
+    height: 220px;
+   /*  margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;*/
+    margin: 10px 20px 30px 40px;
+    padding: 20px 20px 20px 20px;
+    /*padding es el ancho del backround*/
+}
+
+main{
+   color: #ffffff; 
+   background-color: rgb(238, 147, 42);
+   width: 300px;
+   margin-top: 10px;
+   margin-right: 20px;
+   margin-bottom: 30px;
+   margin-left: 40px;
+}
