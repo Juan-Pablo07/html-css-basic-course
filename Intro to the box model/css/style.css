@@ -1,0 +1,18 @@
+body {
+    background: #333;
+    color: white;
+}
+
+header {
+      background:rgb(21, 110, 110);
+      color:#3ece1a;
+      width: 400px;;
+ }
+
+ main {
+    background:rgb(21, 110, 110);
+    color: rgb(0, 225, 255);
+    width: 400px;
+    height: 200px;
+
+ }
