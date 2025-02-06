@@ -1,0 +1,33 @@
+body {
+    background: #333;
+    color: white;
+}
+
+header {
+    width: 100px;
+    
+    border-color: yellow;
+    border-width: 10px;
+    border-style: solid;
+    
+    padding: 20px;
+    margin: 10px;
+}
+/*Esta es la otra manera de hacer lo mismo pero mas corto*/
+main {
+    padding: 20px;
+    border: solid yellow 10px ;
+}
+footer{
+    width: 100px;
+    
+    border: 10px solid red;
+    
+    border-bottom-color: yellow; 
+    border-left-style: dashed;   
+    
+    padding: 20px;
+    margin: 20px;
+
+
+}
