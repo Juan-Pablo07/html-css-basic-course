@@ -1,0 +1,17 @@
+em: Es una unidad de medida relativa que se basa en el tamaño de la fuente del elemento en el que se aplica.
+ Generalmente, 1 em equivale a 16 píxeles, que es el valor predeterminado de los navegadores. Sin embargo,
+  este valor puede cambiar dependiendo del tamaño de la fuente del elemento contenedor. Esto hace que em sea 
+  más variable, ya que su tamaño se ajusta a la jerarquía de elementos padres, lo que puede generar comportamientos
+  inesperados si no se controla bien el contexto.
+
+rem: También es una unidad de medida relativa, pero en lugar de depender del tamaño de fuente del contenedor, 
+se basa en el tamaño de fuente raíz del documento (generalmente, el elemento <html>). Esto hace que los valores
+ con rem sean más consistentes, ya que siempre están relacionados con el tamaño base definido en el documento.
+  Las rem buscan ser consistentes y mantienen una referencia constante a la raíz, adaptando el tamaño de fuente
+  \ del elemento HTML sin verse afectadas por cambios en los elementos padres.
+
+En resumen:
+
+em es más variable porque depende del tamaño de fuente de su contenedor.
+rem es más consistente porque siempre se calcula a partir del tamaño de fuente raíz del documento, 
+lo que le permite ser más predecible y controlable a lo largo del diseño.
